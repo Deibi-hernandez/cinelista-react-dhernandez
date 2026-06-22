@@ -1,0 +1,14 @@
+prompt para la Etapa 2 — Componente PeliculaCard:
+Crea en src/components/PeliculaCard.jsx que reciba por props titulo, genero, duracion, clasificacion, sinopsis, horarios. Muestra la información ordenada y aplica un estilo diferenciado según la clasificación (TE, +14, +18). Usa PropTypes con valores por defecto, renderiza texto como JSX normal (sin dangerouslySetInnerHTML) y evita credenciales o datos sensibles en el código.
+
+
+prompt para la Etapa 3 — ListaPeliculas:
+Crea src/components/ListaPeliculas.jsx que reciba el array de películas por props. Recorre el array con .map() y renderiza un PeliculaCard por cada película. Asigna la prop key usando el id de cada elemento (no uses el índice). En App.jsx, renderiza ListaPeliculas pasándole los datos importados.
+
+
+prompt para la Etapa 4 — Estado y filtro seguro (15 min):
+Crea src/components/FiltroClasificacion.jsx con botones o selector para filtrar por clasificación: “Todas”, “TE”, “+14”, “+18”. En App.jsx, usa useState para guardar el filtro y el campo de búsqueda por título. Aplica ambos filtros antes de pasar los datos a ListaPeliculas. Usa renderizado condicional para mostrar “No hay películas que coincidan” si el resultado está vacío.
+Buenas prácticas: el campo de búsqueda debe ser controlado, valida y normaliza el texto (recorta espacios y limita largo) antes de usarlo.
+
+
+
